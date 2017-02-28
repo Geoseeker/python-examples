@@ -1,5 +1,6 @@
 from calculator import Calculator
 from shape import Shape
+from bankAccount import BankAccount
 
 print("------- TEST Calculator -------")
 cal = Calculator()
@@ -35,4 +36,30 @@ print(distance)
 shape.printShape()  # dobrze 
 print(shape.printShape())
 shape.distance(shape2)
+
+
+print("------- TEST BankAccount -------")
+
+ba = BankAccount(123456)
+ba.printInfo()
+ba.depositCash(130.0)
+
+ba.depositCash(1)
+ba.printInfo()
+
+# ba.depositCash("123")
+
+sto = 100.00
+ba.withdrawtCash(sto)
+ba.printInfo()
+
+ba.withdrawtCash(100)
+ba.printInfo()
+
+ba.withdrawtCash(-10)
+ba.printInfo()
+
+
+
+
 
