@@ -19,6 +19,6 @@ class Book(object):
 
 book = Book()
 
-for info in book:
-    print(info)
+for page in book:
+    print(page)
 
