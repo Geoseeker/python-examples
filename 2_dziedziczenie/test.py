@@ -1,7 +1,8 @@
 from advancedCalculator import AdvancedCalculator
 from calculator import Calculator
 from circle import Circle
-
+from hourlyEmployee import HourlyEmployee
+from salariedEmployee import SalariedEmployee
 
 print("-------- AdvancedCalculator -------")
 cal = Calculator()
@@ -26,3 +27,20 @@ area = c.area()
 print("Area = " + str(area))
 circuit = c.circuit()
 print("Circuit = " + str(circuit))
+
+print("-------- HourlyEmployee --------")
+
+he = HourlyEmployee(123, "Alicja", "Baszak", 10)
+he.printInfo()
+
+he.getSalary()
+
+payment = he.computePayment(8)
+print("payment: {}".format(payment))
+
+print("-------- SalariedEmployee --------")
+
+se = SalariedEmployee(123, "Alicja", "Baszak", 10)
+se.printInfo()
+payment = se.computePayment()
+print("payment: {}".format(payment))
