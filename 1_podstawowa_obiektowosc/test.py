@@ -1,6 +1,7 @@
 from calculator import Calculator
 from shape import Shape
 from bankAccount import BankAccount
+from employee import Employee
 
 print("------- TEST Calculator -------")
 cal = Calculator()
@@ -59,7 +60,15 @@ ba.printInfo()
 ba.withdrawtCash(-10)
 ba.printInfo()
 
+print(ba.getCash())
 
+print("------- TEST Employee -------")
 
+e = Employee(1, "Alicja", "Baszak", 10)
+e.printInfo()
 
+e.raiseSalary(100)
+e.printInfo()
 
+e.raiseSalary(100)
+e.printInfo()
